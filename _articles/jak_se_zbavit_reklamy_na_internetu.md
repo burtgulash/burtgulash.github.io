@@ -6,24 +6,22 @@ date: 2015-09-22
 Podle mě lidem vyloženě nevadí reklama. Často se třeba na youtubu podívají na
 reklamu Kofoly se psem zubáčem. Otravné je ale to, že abych se dobrovolně
 podíval na reklamu, musím předtím strpět deset vteřin jiné reklamy.
-
 Z nenažranosti některých webů, které přetékají nesouvisející reklamou a zkouší
 na mě všemožné klikací pasti se mi už zvedá kufr, ale když ty reklamy všichni
 tak milují, tak vám představuji zbrusu nový µBlock Origin! Pomocník při
 jarním webovém úklidu pro každou rodinu!
-
 Podobným pomocníkem odstraňujícím internetovou špínu a pach byl vždy Adblock
 Plus, ale poslední dobou začal žrát příliš
 paměti[1](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872)[2](http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461)
 a autor si začal nechal platit za odblokování vybraných
 reklam[3](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock).
-
-Na oba problémy přišla odpověď právě ve formě µBlocku. Jak ho tedy použít?
-Návod budu popisovat pro prohlížeč Google Chrome, ale lze ho použít i ve
-Firefoxu.
+Na oba problémy přišla odpověď právě ve formě µBlocku.
+Jak ho tedy použít?  Návod budu popisovat pro prohlížeč Google Chrome, ale lze
+ho použít i ve Firefoxu.
 
 ### 1. Nainstalování µBlocku
 Doplněk stáhneme podle prohlížeče:
+
 * Chrome - [uBlock Origin - Chrome Web Store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=cs)
 * Firefox - [uBlock Origin :: Mozilla Add-ons](https://addons.mozilla.org/cs/firefox/addon/ublock-origin/)
 

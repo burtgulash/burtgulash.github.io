@@ -9,7 +9,7 @@
         {% for article in articles %}
             <div class="page">
                 <h2>{{article.title}}</h2>
-                <i>{{article.date.strftime("%d.%m.%Y)}}</i>
+                <i>{{article.date.strftime("%d.%m.%Y")}}</i>
                 </p>{{article.body}}</p>
             </div>
         {% endfor %}

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
+import hoep
 import jinja2
-import markdown2
 import os
 import datetime
 import dateutil.parser
@@ -38,8 +38,9 @@ def parse_article(articlefile):
     while not lines[i].strip():
         i += 1
 
+
     body = "\n".join(lines[i:])
-    html = markdown2.markdown(body)
+    html = hoep.render(body, 0, 0)
 
     return {
         "title": title,
