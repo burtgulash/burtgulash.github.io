@@ -29,6 +29,10 @@ Po nainstalování začne bez jakéhokoliv dalšího nastavování blokovat vět
 reklamy pocházející ze zahraničních serverů - např. youtube je od teď bez
 reklam.
 
+<video height="450px" autoplay loop>
+    <source src="static/ublock1.mp4" />
+</video>
+
 ### 2. Odfiltrování dodatečných reklam z českých serverů
 uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
 vlastní filtraci bordelu, který nebyl doteď řádně podchycen.
@@ -45,6 +49,6 @@ uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil jsem pokročilej�
 funkce, jako například kosmetické filtrování - tj. odstranění konkrétních prvků
 na stránce pomocí nástroje pipeta. Časem uvidíme, jestli uBlock nepotká stejný
 osud jako Adblock Plus a nenahradí ho nová čerstvá generace nepodplacených
-čistících prostředků, ale prozatím je to v téhle asi nejsilnější nástroj pro
-nejsilnější chlapy.
+čistících prostředků, ale prozatím je to v téhle oblasti nejsilnější nástroj
+pro ty nejsvalnatější chlapy.
 
