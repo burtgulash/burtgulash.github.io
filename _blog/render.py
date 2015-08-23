@@ -12,11 +12,8 @@ def date_cesky(date):
     month = [
         "ledna", "února", "března", "dubna", "května", "června", "července",
         "srpna", "září", "října", "listopadu", "prosince"
-    ][date.month]
-    weekday = [
-        "pondělí", "úterý", "středa", "čtvrtek", "pátek", "sobota", "neděle"
-    ][date.weekday()]
-    return "{} {}. {} {}".format(weekday, date.day, month, date.year)
+    ][date.month - 1]
+    return "{}. {} {}".format(date.day, month, date.year)
 
 def parse_article(articlefile):
     with open(articlefile, "r") as f:

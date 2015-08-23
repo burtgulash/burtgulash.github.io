@@ -1,6 +1,6 @@
 ---
 title: Jak odstranit otravnou reklamu na internetu
-date: 2015-09-22
+date: 2015-08-22
 location: Plzeň
 ---
 
@@ -32,11 +32,12 @@ Po nainstalování začne bez jakéhokoliv dalšího nastavování **blokovat v�
 reklamy a špíny** pocházející ze zahraničních serverů - např. youtube je od teď bez
 reklam.
 
-<div class="video-center">
+<figure>
     <video height="300px" autoplay loop>
         <source src="static/ublock1.mp4" />
     </video>
-</div>
+    <figcaption>Video 1. Nainstalování doplňku</figcaption>
+</figure>
 
 ### 2. Odfiltrování dodatečných reklam z českých stránek
 uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
@@ -45,11 +46,12 @@ vlastní filtraci bordelu, který nebyl doteď řádně podchycen.
 Zapneme pokročilý mód, který nám umožní nastavování vlastních dynamických
 pravidel. Odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se
 
-<div class="video-center">
+<figure>
     <video height="300px" autoplay loop>
         <source src="static/ublock2.mp4" />
     </video>
-</div>
+    <figcaption>Video 2. Povolení pokročilého módu</figcaption>
+</figure>
 
 právě nacházíme. Většina z nich jsou nějaké trackery, které sledují naši
 aktivitu na stránce, servery ze kterých se tahá reklama, apod. Některé z nich
@@ -63,11 +65,12 @@ vpravo od něj zablokuje doménu jen na aktuální stránce. Pokud se chcete
 pošťourat v nastavení více detailu, pak existuje podrobnější [návod jak na
 to](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
 
-<div class="video-center">
+<figure>
     <video height="300px" autoplay loop>
         <source src="static/ublock3.mp4" />
     </video>
-</div>
+    <figcaption>Video 3. Dynamické blokování domén</figcaption>
+</figure>
 
 
 uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil jsem pokročilejší
