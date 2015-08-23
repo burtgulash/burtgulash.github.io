@@ -20,8 +20,9 @@
 {% for article in articles %}
     <article class="article">
         <header>
-            <h2>{{article.title}}</h2>
             <time datetime="{{article.date}}">{{article.date}}</time>
+            - Plzeň
+            <h2>{{article.title}}</h2>
         </header>
         </p>{{article.body}}</p>
     </article>
@@ -30,5 +31,12 @@
                 </main>
             </div>
         </div>
+        <footer class="site__footer">
+            <div class="wrap">
+                <p class="author">
+                    Burtgulash 2015
+                </p>
+            </div>
+        </footer>
     </body>
 </html>

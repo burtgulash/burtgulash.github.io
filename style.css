@@ -14,15 +14,41 @@ html {
 }
 
 h1 { padding: 22px 0; }
-h2 { padding: 22px 0; }
-h3 { padding: 16px 0; }
-p { padding-bottom: 22px; }
+h2 { 
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+}
 
-ul li {
+h3 {
+    line-height: 1.2em;
+    margin: 2.5em 0 0.5em 0;
+}
+
+p, ul, ol, dl {
+    margin: 0.8em 0;
+}
+
+p {
+    color: #333;
+}
+
+a { 
     text-decoration: none;
 }
 
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { 
+    text-decoration: underline;
+}
 
 .video-center { text-align: center;}
+
+footer {
+    padding: 3.1415em;
+    margin-bottom: 6.2831em;
+}
+
+.author {
+    text-align: center;
+}
