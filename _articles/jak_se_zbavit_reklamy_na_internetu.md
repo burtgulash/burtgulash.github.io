@@ -22,15 +22,15 @@ blokovač[[4]](https://github.com/gorhill/uBlock) - reklamy, sledování identit
 na webu, apod.
 
 
-### 1. Nainstalování µBlocku
+### 1. Nainstalování
 Stáhněte si doplněk do prohlížeče.
 
 * Chrome - [uBlock Origin - Chrome Web Store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=cs)
 * Firefox - [uBlock Origin :: Mozilla Add-ons](https://addons.mozilla.org/cs/firefox/addon/ublock-origin/)
 
-Po nainstalování začne bez jakéhokoliv dalšího nastavování **blokovat většinu
-reklamy a špíny** pocházející ze zahraničních serverů - např. youtube je od teď bez
-reklam.
+Po nainstalování začne bez jakéhokoliv dalšího nastavování blokovat většinu
+reklamy a špíny pocházející ze zahraničních serverů - např. youtube je od teď bez
+reklam. Toho je dosaženo pomocí statických filtrů, které spravuje komunita.
 
 <figure>
     <video height="300px" autoplay loop>
@@ -41,10 +41,9 @@ reklam.
 
 ### 2. Odfiltrování dodatečných reklam z českých stránek
 uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
-vlastní filtraci bordelu, který nebyl doteď řádně podchycen.
-
-Zapneme pokročilý mód, který nám umožní nastavování vlastních dynamických
-pravidel. Odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se
+vlastní filtraci bordelu, který nebyl doteď řádně podchycen. Zapneme pokročilý
+mód, který nám umožní nastavování vlastních dynamických pravidel. Odfiltrujeme
+všechny domény, které nesouvisí se stránkou, na které se právě nacházíme. 
 
 <figure>
     <video height="300px" autoplay loop>
@@ -53,16 +52,16 @@ pravidel. Odfiltrujeme všechny domény, které nesouvisí se stránkou, na kter
     <figcaption>Video 2. Povolení pokročilého módu</figcaption>
 </figure>
 
-právě nacházíme. Většina z nich jsou nějaké trackery, které sledují naši
-aktivitu na stránce, servery ze kterých se tahá reklama, apod. Některé z nich
-jsou ale prvky, které stránka vyžaduje - například fonty stažené z
-fonts.googleapis.com nebo obrázky a skripty ze sítě pro doručování obsahu
-(content delivery network - cdn). Druhý pozor budeme dávat při blokování
-facebooku, twitteru a jiných stránek, které jinak používáme, ale nechceme, aby
-nás sledovaly na této stránce. uBlock umožňuje blokovat tyhle případy pouze
-lokálně pro aktuální stránku. První sloupec zablokuje domény **všude**. Sloupec
-vpravo od něj zablokuje doménu jen na aktuální stránce. Pokud se chcete
-pošťourat v nastavení více detailu, pak existuje podrobnější [návod jak na
+Většina z nich jsou nějaké trackery, které sledují naši aktivitu na stránce,
+servery ze kterých se tahá reklama, apod. Některé z nich jsou ale prvky, které
+stránka vyžaduje - například fonty stažené z fonts.googleapis.com nebo obrázky
+a skripty ze sítě pro doručování obsahu (content delivery network - cdn). Druhý
+pozor budeme dávat při blokování facebooku, twitteru a jiných stránek, které
+jinak používáme, ale nechceme, aby nás sledovaly na této stránce. uBlock
+umožňuje blokovat tyhle případy pouze lokálně pro aktuální stránku. První
+sloupec zablokuje domény **všude**. Sloupec vpravo od něj zablokuje doménu jen
+na aktuální stránce. Pokud se chcete pošťourat v nastavení více detailu, pak
+existuje podrobnější [návod jak na
 to](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
 
 <figure>
@@ -77,6 +76,6 @@ uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil jsem pokročilej�
 funkce, jako například kosmetické filtrování - tj. odstranění konkrétních prvků
 na stránce pomocí nástroje pipeta. Časem uvidíme, jestli uBlock nepotká stejný
 osud jako Adblock Plus a nenahradí ho nová generace nezkorumpovaných blokovačů,
-ale prozatím platí, že je to v téhle kategorii ten nejsilnější nástroj pro
-ty nejsvalnatější a nejchlupatější chlapy.
+ale prozatím platí, že je to v téhle kategorii ten nejsilnější nástroj pro ty
+nejsvalnatější a nejchlupatější chlapy.
 
