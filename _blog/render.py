@@ -2,10 +2,21 @@
 
 import hoep
 import jinja2
+import jinja2.filters
 import os
 import datetime
 import dateutil.parser
 
+
+def date_cesky(date):
+    month = [
+        "ledna", "února", "března", "dubna", "května", "června", "července",
+        "srpna", "září", "října", "listopadu", "prosince"
+    ][date.month]
+    weekday = [
+        "pondělí", "úterý", "středa", "čtvrtek", "pátek", "sobota", "neděle"
+    ][date.weekday()]
+    return "{} {}. {} {}".format(weekday, date.day, month, date.year)
 
 def parse_article(articlefile):
     with open(articlefile, "r") as f:
@@ -14,7 +25,7 @@ def parse_article(articlefile):
     in_meta = False
     lines = article.splitlines()
 
-    title, date = None, None
+    title, date, location = None, None, None
     for i, line in enumerate(lines):
         if line == "---":
             if in_meta:
@@ -23,6 +34,8 @@ def parse_article(articlefile):
         elif in_meta:
             if line.startswith("title:"):
                 title = line.replace("title:", "").strip()
+            elif line.startswith("location:"):
+                location = line.replace("location:", "").strip()
             elif line.startswith("date:"):
                 date = line.replace("date:", "").strip()
                 date = dateutil.parser.parse(date)
@@ -46,12 +59,15 @@ def parse_article(articlefile):
         "title": title,
         "date": date,
         "body": html,
+        "location": location,
     }
 
 
 
 
 if __name__ == "__main__":
+    jinja2.filters.FILTERS["date_cesky"] = date_cesky
+
     with open("base.html", "r") as f:
         template = jinja2.Template(f.read())
 

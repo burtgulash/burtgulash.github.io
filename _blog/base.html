@@ -20,8 +20,12 @@
 {% for article in articles %}
     <article class="article">
         <header>
-            <time datetime="{{article.date}}">{{article.date}}</time>
-            - Plzeň
+            <em>
+                <time datetime="{{article.date}}">{{article.date|date_cesky}}</time>
+                {% if article.location %}
+                    - {{article.location}}
+                {% endif %}
+            </em>
             <h2>{{article.title}}</h2>
         </header>
         </p>{{article.body}}</p>

@@ -1,6 +1,7 @@
 ---
 title: Jak odstranit otravnou reklamu na internetu
 date: 2015-09-22
+location: Plzeň
 ---
 
 Poslední roky se stala reklama na internetu pěkně nenažranou a připravuje na
@@ -15,7 +16,10 @@ paměti[[1]](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically
 a autor si začal nechal platit za odblokování vybraných
 reklam[[3]](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock).
 Nikdo nemáme rádi korupci, proto na oba problémy přišla odpověď ve formě
-moderního blokovoče - µBlock Origin.
+moderního blokovoče - µBlock Origin. Autoři zdůrazňují, že to není jen pouhý
+blokovač reklam, ale všeúčelový
+blokovač[[4]](https://github.com/gorhill/uBlock) - reklamy, sledování identity
+na webu, apod.
 
 
 ### 1. Nainstalování µBlocku
@@ -24,8 +28,8 @@ Stáhněte si doplněk do prohlížeče.
 * Chrome - [uBlock Origin - Chrome Web Store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=cs)
 * Firefox - [uBlock Origin :: Mozilla Add-ons](https://addons.mozilla.org/cs/firefox/addon/ublock-origin/)
 
-Po nainstalování začne bez jakéhokoliv dalšího nastavování blokovat většinu
-reklamy pocházející ze zahraničních serverů - např. youtube je od teď bez
+Po nainstalování začne bez jakéhokoliv dalšího nastavování **blokovat většinu
+reklamy a špíny** pocházející ze zahraničních serverů - např. youtube je od teď bez
 reklam.
 
 <div class="video-center">
@@ -40,6 +44,13 @@ vlastní filtraci bordelu, který nebyl doteď řádně podchycen.
 
 Zapneme pokročilý mód, který nám umožní nastavování vlastních dynamických
 pravidel. Odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se
+
+<div class="video-center">
+    <video height="300px" autoplay loop>
+        <source src="static/ublock2.mp4" />
+    </video>
+</div>
+
 právě nacházíme. Většina z nich jsou nějaké trackery, které sledují naši
 aktivitu na stránce, servery ze kterých se tahá reklama, apod. Některé z nich
 jsou ale prvky, které stránka vyžaduje - například fonty stažené z
@@ -47,12 +58,22 @@ fonts.googleapis.com nebo obrázky a skripty ze sítě pro doručování obsahu
 (content delivery network - cdn). Druhý pozor budeme dávat při blokování
 facebooku, twitteru a jiných stránek, které jinak používáme, ale nechceme, aby
 nás sledovaly na této stránce. uBlock umožňuje blokovat tyhle případy pouze
-lokálně pro aktuální stránku.
+lokálně pro aktuální stránku. První sloupec zablokuje domény **všude**. Sloupec
+vpravo od něj zablokuje doménu jen na aktuální stránce. Pokud se chcete
+pošťourat v nastavení více detailu, pak existuje podrobnější [návod jak na
+to](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
+
+<div class="video-center">
+    <video height="300px" autoplay loop>
+        <source src="static/ublock3.mp4" />
+    </video>
+</div>
+
 
 uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil jsem pokročilejší
 funkce, jako například kosmetické filtrování - tj. odstranění konkrétních prvků
 na stránce pomocí nástroje pipeta. Časem uvidíme, jestli uBlock nepotká stejný
 osud jako Adblock Plus a nenahradí ho nová generace nezkorumpovaných blokovačů,
-ale prozatím platí, že je to v téhle kategorii ten nejsvalnatější nástroj pro
+ale prozatím platí, že je to v téhle kategorii ten nejsilnější nástroj pro
 ty nejsvalnatější a nejchlupatější chlapy.
 

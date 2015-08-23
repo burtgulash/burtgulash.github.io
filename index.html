@@ -20,8 +20,12 @@
 
     <article class="article">
         <header>
-            <time datetime="2015-09-22 00:00:00">2015-09-22 00:00:00</time>
-            - Plzeň
+            <em>
+                <time datetime="2015-09-22 00:00:00">úterý 22. října 2015</time>
+                
+                    - Plzeň
+                
+            </em>
             <h2>Jak odstranit otravnou reklamu na internetu</h2>
         </header>
         </p><p>Poslední roky se stala reklama na internetu pěkně nenažranou a připravuje na
@@ -36,7 +40,10 @@ paměti<a href="http://lifehacker.com/adblock-plus-once-again-found-to-dramatica
 a autor si začal nechal platit za odblokování vybraných
 reklam<a href="http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock">[3]</a>.
 Nikdo nemáme rádi korupci, proto na oba problémy přišla odpověď ve formě
-moderního blokovoče - µBlock Origin.</p>
+moderního blokovoče - µBlock Origin. Autoři zdůrazňují, že to není jen pouhý
+blokovač reklam, ale všeúčelový
+blokovač<a href="https://github.com/gorhill/uBlock">[4]</a> - reklamy, sledování identity
+na webu, apod.</p>
 
 <h3>1. Nainstalování µBlocku</h3>
 
@@ -47,8 +54,8 @@ moderního blokovoče - µBlock Origin.</p>
 <li>Firefox - <a href="https://addons.mozilla.org/cs/firefox/addon/ublock-origin/">uBlock Origin :: Mozilla Add-ons</a></li>
 </ul>
 
-<p>Po nainstalování začne bez jakéhokoliv dalšího nastavování blokovat většinu
-reklamy pocházející ze zahraničních serverů - např. youtube je od teď bez
+<p>Po nainstalování začne bez jakéhokoliv dalšího nastavování <strong>blokovat většinu
+reklamy a špíny</strong> pocházející ze zahraničních serverů - např. youtube je od teď bez
 reklam.</p>
 
 <div class="video-center">
@@ -63,21 +70,37 @@ reklam.</p>
 vlastní filtraci bordelu, který nebyl doteď řádně podchycen.</p>
 
 <p>Zapneme pokročilý mód, který nám umožní nastavování vlastních dynamických
-pravidel. Odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se
-právě nacházíme. Většina z nich jsou nějaké trackery, které sledují naši
+pravidel. Odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se</p>
+
+<div class="video-center">
+    <video height="300px" autoplay loop>
+        <source src="static/ublock2.mp4" />
+    </video>
+</div>
+
+<p>právě nacházíme. Většina z nich jsou nějaké trackery, které sledují naši
 aktivitu na stránce, servery ze kterých se tahá reklama, apod. Některé z nich
 jsou ale prvky, které stránka vyžaduje - například fonty stažené z
 fonts.googleapis.com nebo obrázky a skripty ze sítě pro doručování obsahu
 (content delivery network - cdn). Druhý pozor budeme dávat při blokování
 facebooku, twitteru a jiných stránek, které jinak používáme, ale nechceme, aby
 nás sledovaly na této stránce. uBlock umožňuje blokovat tyhle případy pouze
-lokálně pro aktuální stránku.</p>
+lokálně pro aktuální stránku. První sloupec zablokuje domény <strong>všude</strong>. Sloupec
+vpravo od něj zablokuje doménu jen na aktuální stránce. Pokud se chcete
+pošťourat v nastavení více detailu, pak existuje podrobnější <a href="https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide">návod jak na
+to</a>.</p>
+
+<div class="video-center">
+    <video height="300px" autoplay loop>
+        <source src="static/ublock3.mp4" />
+    </video>
+</div>
 
 <p>uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil jsem pokročilejší
 funkce, jako například kosmetické filtrování - tj. odstranění konkrétních prvků
 na stránce pomocí nástroje pipeta. Časem uvidíme, jestli uBlock nepotká stejný
 osud jako Adblock Plus a nenahradí ho nová generace nezkorumpovaných blokovačů,
-ale prozatím platí, že je to v téhle kategorii ten nejsvalnatější nástroj pro
+ale prozatím platí, že je to v téhle kategorii ten nejsilnější nástroj pro
 ty nejsvalnatější a nejchlupatější chlapy.</p>
 </p>
     </article>
