@@ -2,33 +2,44 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <title>Buřtgulášův chlév</title>
     </head>
     <body>
-        <h1>Buřtgulášův chlév</h1>
-        
-            <div class="page">
-                <h2>Jak odstranit otravnou reklamu na internetu</h2>
-                <i>22.09.2015</i>
-                </p><p>Podle mě lidem vyloženě nevadí reklama. Často se třeba na youtubu podívají na
-reklamu Kofoly se psem zubáčem. Otravné je ale to, že abych se dobrovolně
-podíval na reklamu, musím předtím strpět deset vteřin jiné reklamy.
-Z nenažranosti některých webů, které přetékají nesouvisející reklamou a zkouší
-na mě všemožné klikací pasti se mi už zvedá kufr, ale když ty reklamy všichni
-tak milují, tak vám představuji zbrusu nový µBlock Origin! Pomocník při
-jarním webovém úklidu pro každou rodinu!
-Podobným pomocníkem odstraňujícím internetovou špínu a pach byl vždy Adblock
-Plus, ale poslední dobou začal žrát příliš
-paměti<a href="http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872">1</a><a href="http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461">2</a>
+        <div class="wrap">
+            <div class="grid">
+                <header role="banner">
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered">
+                        <h1><a href="/">Buřtgulášův chlév</a></h1>
+                    </div>
+                </header>
+                <main>
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered">
+
+    <article class="article">
+        <header>
+            <h2>Jak odstranit otravnou reklamu na internetu</h2>
+            <time datetime="2015-09-22 00:00:00">2015-09-22 00:00:00</time>
+        </header>
+        </p><p>Poslední roky se stala reklama na internetu pěkně nenažranou a připravuje na
+nás různé klikací pasti, nutí nás pustit si video reklamu před tím, než si
+pustíme jinou reklamu na youtube, apod. Všimnul jsem si, že spousta lidí neví,
+jak používat blokovače reklam, tak jsem sepsal malý návod, jak se zbavit
+většiny otravných reklam na webu.</p>
+
+<p>Dlouhodobým pomocníkem při jarním úklidu webu byl známý Adblock Plus, ale
+poslední dobou začal žrát příliš
+paměti<a href="http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872">[1]</a><a href="http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461">[2]</a>
 a autor si začal nechal platit za odblokování vybraných
-reklam<a href="http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock">3</a>.
-Na oba problémy přišla odpověď právě ve formě µBlocku.
-Jak ho tedy použít?  Návod budu popisovat pro prohlížeč Google Chrome, ale lze
-ho použít i ve Firefoxu.</p>
+reklam<a href="http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock">[3]</a>.
+Nikdo nemáme rádi korupci, proto na oba problémy přišla odpověď ve formě
+moderního blokovoče - µBlock Origin.</p>
 
 <h3>1. Nainstalování µBlocku</h3>
 
-<p>Doplněk stáhneme podle prohlížeče:</p>
+<p>Stáhněte si doplněk do prohlížeče.</p>
 
 <ul>
 <li>Chrome - <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=cs">uBlock Origin - Chrome Web Store</a></li>
@@ -39,33 +50,40 @@ ho použít i ve Firefoxu.</p>
 reklamy pocházející ze zahraničních serverů - např. youtube je od teď bez
 reklam.</p>
 
-<p><video height="450px" autoplay loop>
-    <source src="static/ublock1.mp4" />
-</video></p>
+<div class="video-center">
+    <video height="300px" autoplay loop>
+        <source src="static/ublock1.mp4" />
+    </video>
+</div>
 
-<h3>2. Odfiltrování dodatečných reklam z českých serverů</h3>
+<h3>2. Odfiltrování dodatečných reklam z českých stránek</h3>
 
 <p>uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
 vlastní filtraci bordelu, který nebyl doteď řádně podchycen.</p>
 
-<h4>2.1 zapneme pokročilý mód</h4>
-
-<h4>2.2 otevřeme ovládací panel uBlocku</h4>
-
-<h4>2.3 odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se právě nacházíme</h4>
-
-<p>Zde je třeba dávat pozor, protože když odfiltrujeme facebook, tak si ho
-zablokujeme všude. uBlock proto nabízí možnost blokovat domény lokálně pro
-aktuální doménu.</p>
+<p>Zapneme pokročilý mód, který nám umožní nastavování vlastních dynamických
+pravidel. Odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se
+právě nacházíme. Většina z nich jsou nějaké trackery, které sledují naši
+aktivitu na stránce, servery ze kterých se tahá reklama, apod. Některé z nich
+jsou ale prvky, které stránka vyžaduje - například fonty stažené z
+fonts.googleapis.com nebo obrázky a skripty ze sítě pro doručování obsahu
+(content delivery network - cdn). Druhý pozor budeme dávat při blokování
+facebooku, twitteru a jiných stránek, které jinak používáme, ale nechceme, aby
+nás sledovaly na této stránce. uBlock umožňuje blokovat tyhle případy pouze
+lokálně pro aktuální stránku.</p>
 
 <p>uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil jsem pokročilejší
 funkce, jako například kosmetické filtrování - tj. odstranění konkrétních prvků
 na stránce pomocí nástroje pipeta. Časem uvidíme, jestli uBlock nepotká stejný
-osud jako Adblock Plus a nenahradí ho nová čerstvá generace nepodplacených
-čistících prostředků, ale prozatím je to v téhle oblasti nejsilnější nástroj
-pro ty nejsvalnatější chlapy.</p>
+osud jako Adblock Plus a nenahradí ho nová generace nezkorumpovaných blokovačů,
+ale prozatím platí, že je to v téhle kategorii ten nejsvalnatější nástroj pro
+ty nejsvalnatější a nejchlupatější chlapy.</p>
 </p>
+    </article>
+
+                    </div>
+                </main>
             </div>
-        
+        </div>
     </body>
 </html>

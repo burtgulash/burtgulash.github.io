@@ -1,0 +1,28 @@
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 { padding: 22px 0; }
+h2 { padding: 22px 0; }
+h3 { padding: 16px 0; }
+p { padding-bottom: 22px; }
+
+ul li {
+    text-decoration: none;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.video-center { text-align: center;}

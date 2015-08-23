@@ -60,9 +60,10 @@ if __name__ == "__main__":
     articles = []
     articles_path = "../_articles"
     for article in os.listdir(articles_path):
-        article = parse_article(os.path.join(articles_path, article))
-        articles.append(article)
-        print("included article \t'%s'" % article["title"])
+        if article.endswith(".md"):
+            article = parse_article(os.path.join(articles_path, article))
+            articles.append(article)
+            print("included article \t'%s'" % article["title"])
 
     page = template.render(articles=articles)
     with open("../index.html", "w") as out:

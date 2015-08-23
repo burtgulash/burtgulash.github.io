@@ -3,24 +3,23 @@ title: Jak odstranit otravnou reklamu na internetu
 date: 2015-09-22
 ---
 
-Podle mě lidem vyloženě nevadí reklama. Často se třeba na youtubu podívají na
-reklamu Kofoly se psem zubáčem. Otravné je ale to, že abych se dobrovolně
-podíval na reklamu, musím předtím strpět deset vteřin jiné reklamy.
-Z nenažranosti některých webů, které přetékají nesouvisející reklamou a zkouší
-na mě všemožné klikací pasti se mi už zvedá kufr, ale když ty reklamy všichni
-tak milují, tak vám představuji zbrusu nový µBlock Origin! Pomocník při
-jarním webovém úklidu pro každou rodinu!
-Podobným pomocníkem odstraňujícím internetovou špínu a pach byl vždy Adblock
-Plus, ale poslední dobou začal žrát příliš
-paměti[1](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872)[2](http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461)
+Poslední roky se stala reklama na internetu pěkně nenažranou a připravuje na
+nás různé klikací pasti, nutí nás pustit si video reklamu před tím, než si
+pustíme jinou reklamu na youtube, apod. Všimnul jsem si, že spousta lidí neví,
+jak používat blokovače reklam, tak jsem sepsal malý návod, jak se zbavit
+většiny otravných reklam na webu.
+
+Dlouhodobým pomocníkem při jarním úklidu webu byl známý Adblock Plus, ale
+poslední dobou začal žrát příliš
+paměti[[1]](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872)[[2]](http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461)
 a autor si začal nechal platit za odblokování vybraných
-reklam[3](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock).
-Na oba problémy přišla odpověď právě ve formě µBlocku.
-Jak ho tedy použít?  Návod budu popisovat pro prohlížeč Google Chrome, ale lze
-ho použít i ve Firefoxu.
+reklam[[3]](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock).
+Nikdo nemáme rádi korupci, proto na oba problémy přišla odpověď ve formě
+moderního blokovoče - µBlock Origin.
+
 
 ### 1. Nainstalování µBlocku
-Doplněk stáhneme podle prohlížeče:
+Stáhněte si doplněk do prohlížeče.
 
 * Chrome - [uBlock Origin - Chrome Web Store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=cs)
 * Firefox - [uBlock Origin :: Mozilla Add-ons](https://addons.mozilla.org/cs/firefox/addon/ublock-origin/)
@@ -29,26 +28,31 @@ Po nainstalování začne bez jakéhokoliv dalšího nastavování blokovat vět
 reklamy pocházející ze zahraničních serverů - např. youtube je od teď bez
 reklam.
 
-<video height="450px" autoplay loop>
-    <source src="static/ublock1.mp4" />
-</video>
+<div class="video-center">
+    <video height="300px" autoplay loop>
+        <source src="static/ublock1.mp4" />
+    </video>
+</div>
 
-### 2. Odfiltrování dodatečných reklam z českých serverů
+### 2. Odfiltrování dodatečných reklam z českých stránek
 uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
 vlastní filtraci bordelu, který nebyl doteď řádně podchycen.
 
-#### 2.1 zapneme pokročilý mód
-#### 2.2 otevřeme ovládací panel uBlocku
-#### 2.3 odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se právě nacházíme
-Zde je třeba dávat pozor, protože když odfiltrujeme facebook, tak si ho
-zablokujeme všude. uBlock proto nabízí možnost blokovat domény lokálně pro
-aktuální doménu.
-
+Zapneme pokročilý mód, který nám umožní nastavování vlastních dynamických
+pravidel. Odfiltrujeme všechny domény, které nesouvisí se stránkou, na které se
+právě nacházíme. Většina z nich jsou nějaké trackery, které sledují naši
+aktivitu na stránce, servery ze kterých se tahá reklama, apod. Některé z nich
+jsou ale prvky, které stránka vyžaduje - například fonty stažené z
+fonts.googleapis.com nebo obrázky a skripty ze sítě pro doručování obsahu
+(content delivery network - cdn). Druhý pozor budeme dávat při blokování
+facebooku, twitteru a jiných stránek, které jinak používáme, ale nechceme, aby
+nás sledovaly na této stránce. uBlock umožňuje blokovat tyhle případy pouze
+lokálně pro aktuální stránku.
 
 uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil jsem pokročilejší
 funkce, jako například kosmetické filtrování - tj. odstranění konkrétních prvků
 na stránce pomocí nástroje pipeta. Časem uvidíme, jestli uBlock nepotká stejný
-osud jako Adblock Plus a nenahradí ho nová čerstvá generace nepodplacených
-čistících prostředků, ale prozatím je to v téhle oblasti nejsilnější nástroj
-pro ty nejsvalnatější chlapy.
+osud jako Adblock Plus a nenahradí ho nová generace nezkorumpovaných blokovačů,
+ale prozatím platí, že je to v téhle kategorii ten nejsvalnatější nástroj pro
+ty nejsvalnatější a nejchlupatější chlapy.
 
