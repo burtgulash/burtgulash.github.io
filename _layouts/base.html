@@ -17,20 +17,7 @@
                 </header>
                 <main>
                     <div class="grid__col grid__col--3-of-5 grid__col--centered">
-{% for article in articles %}
-    <article class="article">
-        <header>
-            <em>
-                <time datetime="{{article.date}}">{{article.date|date_cesky}}</time>
-                {% if article.location %}
-                <span>- {{article.location}}</span>
-                {% endif %}
-            </em>
-            <h2>{{article.title}}</h2>
-        </header>
-        </p>{{article.body}}</p>
-    </article>
-{% endfor %}
+                        {% include 'article.html' %}
                     </div>
                 </main>
             </div>

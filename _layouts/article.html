@@ -1,0 +1,14 @@
+{% for article in articles %}
+    <article class="article">
+        <header>
+            <em>
+                <time datetime="{{article.date}}">{{article.date|date_cesky}}</time>
+                {% if article.location %}
+                <span>- {{article.location}}</span>
+                {% endif %}
+            </em>
+            <h2>{{article.title}}</h2>
+        </header>
+        </p>{{article.body}}</p>
+    </article>
+{% endfor %}

@@ -61,24 +61,22 @@ def parse_article(articlefile):
 
 
 
-
 if __name__ == "__main__":
     jinja2.filters.FILTERS["date_cesky"] = date_cesky
-
-    with open("base.html", "r") as f:
-        template = jinja2.Template(f.read())
+    env = jinja2.Environment(loader=jinja2.FileSystemLoader("_layouts"))
 
     print("creating blog page")
 
     articles = []
-    articles_path = "../_articles"
+    articles_path = "_articles"
     for article in os.listdir(articles_path):
         if article.endswith(".md"):
             article = parse_article(os.path.join(articles_path, article))
             articles.append(article)
             print("included article \t'%s'" % article["title"])
 
-    page = template.render(articles=articles)
-    with open("../index.html", "w") as out:
+    base_template = env.get_template("base.html")
+    page = base_template.render(articles=articles)
+    with open("index.html", "w") as out:
         out.write(page)
 
