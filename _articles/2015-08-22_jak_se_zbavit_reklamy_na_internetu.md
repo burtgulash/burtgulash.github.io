@@ -33,7 +33,7 @@ reklamy a špíny pocházející ze zahraničních serverů - např. youtube je 
 reklam. Toho je dosaženo pomocí statických filtrů, které spravuje komunita.
 
 <figure>
-    <video height="400px" autoplay loop>
+    <video height="480px" autoplay loop>
         <source src="static/ublock1.mp4" />
     </video>
     <figcaption>Video 1. Nainstalování doplňku</figcaption>
@@ -46,7 +46,7 @@ mód, který nám umožní nastavování vlastních dynamických pravidel. Odfil
 všechny domény, které nesouvisí se stránkou, na které se právě nacházíme. 
 
 <figure>
-    <video height="400px" autoplay loop>
+    <video height="480px" autoplay loop>
         <source src="static/ublock2.mp4" />
     </video>
     <figcaption>Video 2. Povolení pokročilého módu</figcaption>
@@ -65,7 +65,7 @@ existuje podrobnější [návod jak na
 to](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
 
 <figure>
-    <video height="400px" autoplay loop>
+    <video height="480px" autoplay loop>
         <source src="static/ublock3.mp4" />
     </video>
     <figcaption>Video 3. Dynamické blokování domén</figcaption>

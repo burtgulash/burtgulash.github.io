@@ -54,5 +54,13 @@ footer {
   padding: 3.1415em;
   margin-bottom: 6.2831em; }
 
+header[role="banner"] {
+  margin: 0 15px; }
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4px; }
+
 .author {
   text-align: center; }
