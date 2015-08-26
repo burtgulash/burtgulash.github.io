@@ -9,6 +9,9 @@
 html {
   font-family: 'Open Sans', sans-serif; }
 
+h1, h2 {
+  letter-spacing: -1px; }
+
 h1 {
   padding: 1em 0; }
 
@@ -21,10 +24,13 @@ article header {
   margin-top: 1em;
   margin-bottom: 2.2em; }
   article header h2 {
+    font-size: 1.8em;
     line-height: 1.2em;
+    letter-spacing: -1px;
+    text-indent: -2px;
+    font-weight: bold;
     margin: 0;
-    margin-bottom: 0.15em;
-    font-size: 1.5em; }
+    margin-bottom: 0.15em; }
   article header .date {
     font-style: italic; }
 
@@ -35,10 +41,14 @@ p {
   color: #333; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: blue; }
 
 a:hover {
   text-decoration: underline; }
+
+a:visited {
+  color: purple; }
 
 li {
   display: box; }
