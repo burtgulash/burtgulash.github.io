@@ -12,7 +12,7 @@ $link-color: blue;
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Libre Baskerville';
 }
 
 h1, h2 {
@@ -54,6 +54,12 @@ p, ul, ol, dl {
 
 p {
     color: $text-color;
+    margin-bottom: 0;
+}
+
+p + p {
+    text-indent: 1em;
+    margin-top: 0;
 }
 
 a { 

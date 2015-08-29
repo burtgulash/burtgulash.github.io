@@ -7,7 +7,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Libre Baskerville'; }
 
 h1, h2 {
   letter-spacing: -1px; }
@@ -38,7 +38,12 @@ p, ul, ol, dl {
   margin: 0.8em 0; }
 
 p {
-  color: #333; }
+  color: #333;
+  margin-bottom: 0; }
+
+p + p {
+  text-indent: 1em;
+  margin-top: 0; }
 
 a {
   text-decoration: none;
