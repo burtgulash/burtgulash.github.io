@@ -1,10 +1,17 @@
 body {
-  font-family: "times new roman", serif;
+  font-family: georgia, "times new roman", serif;
   color: #333;
   font-size: 16px;
   text-rendering: optimizelegibility;
   margin: 0;
   padding: 0; }
+
+header[role="banner"] {
+  margin-bottom: 50px; }
+  header[role="banner"] h1 {
+    padding: .9em;
+    margin: 0;
+    font-size: 22px; }
 
 main {
   max-width: 720px;
@@ -53,7 +60,7 @@ a:visited {
 
 figure {
   text-align: center;
-  margin: 2em 0; }
+  margin: 2.2em 0; }
 
 video {
   max-width: 640px; }
@@ -61,14 +68,6 @@ video {
 footer {
   padding: 3.1415em;
   margin-bottom: 6.2831em; }
-
-header[role="banner"] {
-  margin-bottom: 50px; }
-  header[role="banner"] h1 {
-    padding: 5px;
-    padding-left: .5em;
-    margin: 0;
-    font-size: 1.4em; }
 
 .author {
   text-align: center; }
