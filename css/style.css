@@ -9,7 +9,7 @@ body {
 main {
   max-width: 720px;
   margin: 0 auto; }
-  main h1, main h2, main h3, main p, main pre, main ul, main ol, main dl, main ul {
+  main h1, main h2, main h3, main p, main pre {
     padding: 0 4px; }
 
 h1, h2, h3, h4, h5 {
@@ -33,7 +33,7 @@ p {
   margin-bottom: 0px; }
 
 p + p {
-  text-indent: 1.375em;
+  text-indent: 1.8em;
   margin-top: 0px; }
 
 article header {
@@ -63,11 +63,12 @@ footer {
   margin-bottom: 6.2831em; }
 
 header[role="banner"] {
-  border-bottom: 1px solid #ddd; }
+  margin-bottom: 50px; }
   header[role="banner"] h1 {
     padding: 5px;
     padding-left: .5em;
-    margin: 0; }
+    margin: 0;
+    font-size: 1.4em; }
 
 .author {
   text-align: center; }
