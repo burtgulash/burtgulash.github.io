@@ -1,65 +1,57 @@
 $text-color: #333;
-$link-color: blue;
+$link-color: #00408F;
 
-.wrap {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-* {
+body {
+    font-family: "times new roman", serif;
+    color: $text-color;
+    font-size: 16px;
+    text-rendering: optimizelegibility;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
 }
 
-html {
-    font-family: 'Libre Baskerville';
+main {
+    max-width: 720px;
+    margin: 0 auto;
+
+    h1, h2, h3, p, pre, ul, ol, dl, ul {
+        padding: 0 4px;
+    }
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
     letter-spacing: -1px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
 }
 
 h1 {
-    padding: 1em 0;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0 0 1em 0;
 }
 
-h3 {
+h2 {
+    font-size: 1.2em;
     line-height: 1.2em;
-    margin: 1.8em 0 0.4em 0;
+    margin: 1.2em 0;
+}
+
+p {
+    line-height: 1.375;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+p + p {
+    text-indent: 1.375em;
+    margin-top: 0px;
 }
 
 article header {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 2.2em;
-
-    h2 { 
-        font-size: 1.8em;
-        line-height: 1.2em;
-        letter-spacing: -1px;
-        text-indent: -2px;
-        font-weight: bold;
-        margin: 0;
-        margin-bottom: 0.15em;
-    }
-
-    .date {
-        font-style: italic;
-    }
-}
-
-p, ul, ol, dl {
-    margin: 0.8em 0;
-}
-
-p {
-    color: $text-color;
-    margin-bottom: 0;
-}
-
-p + p {
-    text-indent: 1em;
-    margin-top: 0;
 }
 
 a { 
@@ -75,17 +67,13 @@ a:visited {
     color: purple;
 }
 
-li {
-    display: box;
-}
-
-ul {
-    display: block;
-}
-
 figure {
     text-align: center;
     margin: 2em 0;
+}
+
+video {
+    max-width: 640px;
 }
 
 footer {
@@ -94,15 +82,17 @@ footer {
 }
 
 header[role="banner"] {
-    margin: 0 15px;
+    border-bottom: 1px solid #ddd;
+
+    h1 {
+        padding: 5px;
+        padding-left: .5em;
+        margin: 0;
+    }
 }
 
-main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 4px;
-}
 
 .author {
     text-align: center;
 }
+

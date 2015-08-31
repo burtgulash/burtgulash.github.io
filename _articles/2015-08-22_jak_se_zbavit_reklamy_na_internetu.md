@@ -22,7 +22,7 @@ blokovač[[4]](https://github.com/gorhill/uBlock) - reklamy, sledování identit
 na webu, apod.
 
 
-### 1. Nainstalování
+## 1. Nainstalování
 Stáhněte si doplněk do prohlížeče.
 
 * Chrome - [uBlock Origin - Chrome Web Store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=cs)
@@ -33,20 +33,20 @@ reklamy a špíny pocházející ze zahraničních serverů - např. youtube je 
 reklam. Toho je dosaženo pomocí statických filtrů, které spravuje komunita.
 
 <figure>
-    <video height="480px" autoplay loop>
+    <video autoplay loop>
         <source src="static/ublock1.mp4" />
     </video>
     <figcaption>Video 1. Nainstalování doplňku</figcaption>
 </figure>
 
-### 2. Odfiltrování dodatečných reklam z českých stránek
+## 2. Odfiltrování dodatečných reklam z českých stránek
 uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
 vlastní filtraci bordelu, který nebyl doteď řádně podchycen. Zapneme pokročilý
 mód, který nám umožní nastavování vlastních dynamických pravidel. Odfiltrujeme
 všechny domény, které nesouvisí se stránkou, na které se právě nacházíme. 
 
 <figure>
-    <video height="480px" autoplay loop>
+    <video autoplay loop>
         <source src="static/ublock2.mp4" />
     </video>
     <figcaption>Video 2. Povolení pokročilého módu</figcaption>
@@ -65,7 +65,7 @@ existuje podrobnější [návod jak na
 to](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
 
 <figure>
-    <video height="480px" autoplay loop>
+    <video autoplay loop>
         <source src="static/ublock3.mp4" />
     </video>
     <figcaption>Video 3. Dynamické blokování domén</figcaption>

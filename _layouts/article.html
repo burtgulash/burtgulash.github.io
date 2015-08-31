@@ -1,7 +1,7 @@
 {% for article in articles %}
     <article class="article">
         <header>
-            <h2>{{article.title}}</h2>
+            <h1>{{article.title}}</h1>
             <div class="date">
                 <time datetime="{{article.date}}">{{article.date|date_cesky}}</time>
                 {% if article.location %}
