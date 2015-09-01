@@ -34,7 +34,7 @@ reklam. Toho je dosaženo pomocí statických filtrů, které spravuje komunita.
 
 <figure>
     <video autoplay loop>
-        <source src="static/ublock1.mp4" />
+        <source src="/static/ublock1.mp4" />
     </video>
     <figcaption>Video 1. Nainstalování doplňku</figcaption>
 </figure>
@@ -47,7 +47,7 @@ všechny domény, které nesouvisí se stránkou, na které se právě nachází
 
 <figure>
     <video autoplay loop>
-        <source src="static/ublock2.mp4" />
+        <source src="/static/ublock2.mp4" />
     </video>
     <figcaption>Video 2. Povolení pokročilého módu</figcaption>
 </figure>
@@ -66,7 +66,7 @@ to](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
 
 <figure>
     <video autoplay loop>
-        <source src="static/ublock3.mp4" />
+        <source src="/static/ublock3.mp4" />
     </video>
     <figcaption>Video 3. Dynamické blokování domén</figcaption>
 </figure>
