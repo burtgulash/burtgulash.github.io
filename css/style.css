@@ -7,11 +7,12 @@ body {
   padding: 0; }
 
 header[role="banner"] {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border-bottom: 1px dashed black; }
   header[role="banner"] h1 {
-    padding: .9em;
+    padding: .4em;
     margin: 0;
-    font-size: 22px; }
+    font-size: 24px; }
 
 main {
   max-width: 720px;
@@ -56,7 +57,7 @@ a:hover {
   text-decoration: underline; }
 
 a:visited {
-  color: purple; }
+  color: #70307F; }
 
 figure {
   text-align: center;
@@ -68,8 +69,9 @@ video {
   max-width: 640px; }
 
 footer {
-  padding: 3.125;
-  margin-bottom: 6.2em; }
+  font-size: 1.125em;
+  margin-top: 4.2em;
+  margin-bottom: 30em; }
 
 .author {
   text-align: center; }
