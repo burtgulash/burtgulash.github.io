@@ -36,15 +36,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 1.8em;
-    line-height: 1.2em;
+    font-size: 1.75em;
+    line-height: 1.25em;
     margin: 0 0 1em 0;
 }
 
 h2 {
-    font-size: 1.2em;
-    line-height: 1.2em;
-    margin: 1.2em 0;
+    font-size: 1.25em;
+    line-height: 1.25;
+    margin: 1.25em 0;
 }
 
 p {
@@ -54,7 +54,7 @@ p {
 }
 
 p + p {
-    text-indent: 1.8em;
+    text-indent: 2em;
     margin-top: 0px;
 }
 
