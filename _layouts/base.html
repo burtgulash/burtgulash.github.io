@@ -11,14 +11,16 @@
         {% endblock %}
     </head>
     <body>
-        <header role="banner">
-            <h1><a href="/">Buřtgulášův chlév</a></h1>
-        </header>
-        <main>
-            {% block main %}
-            {% endblock %}
-        </main>
-        <footer>
+        <div class="page-wrap">
+            <header class="site-header">
+                <h1><a href="/">Buřtgulášův chlév</a></h1>
+            </header>
+            <main>
+                {% block main %}
+                {% endblock %}
+            </main>
+        </div>
+        <footer class="site-footer">
             {% block footer %}
             <p class="author">
                 Burtgulash

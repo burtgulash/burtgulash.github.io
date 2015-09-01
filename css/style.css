@@ -1,3 +1,6 @@
+html, body {
+  height: 100%; }
+
 body {
   font-family: georgia, "times new roman", serif;
   color: #333;
@@ -6,10 +9,10 @@ body {
   margin: 0;
   padding: 0; }
 
-header[role="banner"] {
+header.site-header {
   margin-bottom: 50px;
   border-bottom: 1px dashed black; }
-  header[role="banner"] h1 {
+  header.site-header h1 {
     padding: .4em;
     margin: 0;
     font-size: 24px;
@@ -71,10 +74,20 @@ figure {
 video {
   max-width: 640px; }
 
-footer {
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -100px; }
+
+.page-wrap:after {
+  content: "";
+  display: block; }
+
+.site-footer, .page-wrap:after {
+  height: 100px; }
+
+footer.site-footer {
   font-size: 1.125em;
-  margin-top: 4.2em;
-  margin-bottom: 30em; }
+  padding: 2.2em; }
 
 hr {
   margin: 1.375em 0 1.375em 0;

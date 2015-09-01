@@ -1,6 +1,11 @@
 $text-color: #333;
 $link-color: #00307F;
 $link-color-visited: $link-color;
+$footer-size: 100px;
+
+html, body {
+    height: 100%;
+}
 
 body {
     font-family: georgia, "times new roman", serif;
@@ -11,7 +16,7 @@ body {
     padding: 0;
 }
 
-header[role="banner"] {
+header.site-header {
     margin-bottom: 50px;
     border-bottom: 1px dashed black;
 
@@ -101,10 +106,23 @@ video {
     max-width: 640px;
 }
 
-footer {
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: -$footer-size;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.site-footer, .page-wrap:after {
+    height: $footer-size;
+}
+
+footer.site-footer {
     font-size: 1.125em;
-    margin-top: 4.2em;
-    margin-bottom: 30em;
+    padding: 2.2em;
 }
 
 hr {
