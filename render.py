@@ -15,7 +15,7 @@ def date_cesky(date):
     ][date.month - 1]
     return "{}. {} {}".format(date.day, month, date.year)
 
-def parse_article(articlefile):
+def parse_article(articlename, articlefile):
     with open(articlefile, "r") as f:
         article = f.read()
 
@@ -53,6 +53,7 @@ def parse_article(articlefile):
     html = hoep.render(body, 0, 0)
 
     return {
+        "name": articlename,
         "title": title,
         "date": date,
         "body": html,
@@ -71,12 +72,19 @@ if __name__ == "__main__":
     articles_path = "_articles"
     for article in os.listdir(articles_path):
         if article.endswith(".md"):
-            article = parse_article(os.path.join(articles_path, article))
+            name = article.rstrip(".md")
+            article = parse_article(name, os.path.join(articles_path, article))
             articles.append(article)
             print("included article \t'%s'" % article["title"])
 
-    base_template = env.get_template("base.html")
-    page = base_template.render(articles=articles)
+    article_template = env.get_template("article.html")
+    for article in articles:
+        page = article_template.render(article=article)
+        with open(os.path.join("articles", article["name"] + ".html"), "w") as out:
+            out.write(page)
+
+    index_template = env.get_template("index.html")
+    page = index_template.render(articles=articles)
     with open("index.html", "w") as out:
         out.write(page)
 

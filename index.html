@@ -2,9 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:700,400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <title>Buřtgulášův chlév</title>
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -15,6 +12,12 @@
     ga('send', 'pageview');
 
 </script>
+
+        
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <title>Buřtgulášův chlév</title>
+        
     </head>
     <body>
         <header role="banner">
@@ -22,110 +25,19 @@
         </header>
         <main>
             
-    <article class="article">
-        <header>
-            <h1>Jak odstranit otravnou reklamu na internetu</h1>
-            <div class="date">
-                <time datetime="2015-08-22 00:00:00">22. srpna 2015</time>
-                
-                <span>- Plzeň</span>
-                
-            </div>
-        </header>
-        <p>Poslední roky se stala reklama na internetu pěkně nenažranou a připravuje na
-nás různé klikací pasti, nutí nás pustit si video reklamu před tím, než si
-pustíme jinou reklamu na youtube, apod. Všimnul jsem si, že spousta lidí neví,
-jak používat blokovače reklam, tak jsem sepsal malý návod, jak se zbavit
-většiny otravných reklam na webu.</p>
 
-<p>Dlouhodobým pomocníkem při jarním úklidu webu byl známý Adblock Plus, ale
-poslední dobou začal žrát příliš
-paměti<a href="http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872">[1]</a><a href="http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461">[2]</a>
-a autor si začal nechal platit za odblokování vybraných
-reklam<a href="http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock">[3]</a>.
-Nikdo nemáme rádi korupci, proto na oba problémy přišla odpověď ve formě
-moderního blokovoče - µBlock Origin. Autoři zdůrazňují, že to není jen pouhý
-blokovač reklam, ale všeúčelový
-blokovač<a href="https://github.com/gorhill/uBlock">[4]</a> - reklamy, sledování identity
-na webu, apod.</p>
+    <ol>
+        <li><a href="articles/2015-08-22_jak_se_zbavit_reklamy_na_internetu.html">Jak odstranit otravnou reklamu na internetu</a></li>
+    </ol>
 
-<h2>1. Nainstalování</h2>
-
-<p>Stáhněte si doplněk do prohlížeče.</p>
-
-<ul>
-<li>Chrome - <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=cs">uBlock Origin - Chrome Web Store</a></li>
-<li>Firefox - <a href="https://addons.mozilla.org/cs/firefox/addon/ublock-origin/">uBlock Origin :: Mozilla Add-ons</a></li>
-</ul>
-
-<p>Po nainstalování začne bez jakéhokoliv dalšího nastavování blokovat většinu
-reklamy a špíny pocházející ze zahraničních serverů - např. youtube je od teď bez
-reklam. Toho je dosaženo pomocí statických filtrů, které spravuje komunita.</p>
-
-<figure>
-    <video autoplay loop>
-        <source src="static/ublock1.mp4" />
-    </video>
-    <figcaption>Video 1. Nainstalování doplňku</figcaption>
-</figure>
-
-<h2>2. Odfiltrování dodatečných reklam z českých stránek</h2>
-
-<p>uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
-vlastní filtraci bordelu, který nebyl doteď řádně podchycen. Zapneme pokročilý
-mód, který nám umožní nastavování vlastních dynamických pravidel. Odfiltrujeme
-všechny domény, které nesouvisí se stránkou, na které se právě nacházíme. </p>
-
-<figure>
-    <video autoplay loop>
-        <source src="static/ublock2.mp4" />
-    </video>
-    <figcaption>Video 2. Povolení pokročilého módu</figcaption>
-</figure>
-
-<p>Většina z nich jsou nějaké trackery, které sledují naši aktivitu na stránce,
-servery ze kterých se tahá reklama, apod. Některé z nich jsou ale prvky, které
-stránka vyžaduje - například fonty stažené z fonts.googleapis.com nebo obrázky
-a skripty ze sítě pro doručování obsahu (content delivery network - cdn). Druhý
-pozor budeme dávat při blokování facebooku, twitteru a jiných stránek, které
-jinak používáme, ale nechceme, aby nás sledovaly na této stránce. uBlock
-umožňuje blokovat tyhle případy pouze lokálně pro aktuální stránku. První
-sloupec zablokuje domény <strong>všude</strong>. Sloupec vpravo od něj zablokuje doménu jen
-na aktuální stránce. Pokud se chcete pošťourat v nastavení více detailu, pak
-existuje podrobnější <a href="https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide">návod jak na
-to</a>.</p>
-
-<figure>
-    <video autoplay loop>
-        <source src="static/ublock3.mp4" />
-    </video>
-    <figcaption>Video 3. Dynamické blokování domén</figcaption>
-</figure>
-
-<p>uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil jsem pokročilejší
-funkce, jako například kosmetické filtrování - tj. odstranění konkrétních prvků
-na stránce pomocí nástroje pipeta. Časem uvidíme, jestli uBlock nepotká stejný
-osud jako Adblock Plus a nenahradí ho nová generace nezkorumpovaných blokovačů,
-ale prozatím platí, že je to v téhle kategorii ten nejsilnější nástroj pro ty
-nejsvalnatější a nejchlupatější chlapy.</p>
-
-<p><br />
-<br /></p>
-
-<ol>
-<li><a href="http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872">This Just In: AdBlock Plus Still Uses a Lot of Memory</a></li>
-<li><a href="http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461">uBlock Is a Fast and Lightweight Alternative to Adblock Plus</a></li>
-<li><a href="http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock">Google, Microsoft, and Amazon are paying to get around Adblock Plus</a></li>
-<li><a href="https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide">OFICIÁLNÍ NÁVOD - Dynamic filtering: quick guide</a></li>
-</ol>
-
-    </article>
 
         </main>
         <footer>
+            
             <p class="author">
                 Burtgulash
             </p>
+            
         </footer>
     </body>
 </html>

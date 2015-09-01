@@ -1,14 +1,17 @@
-{% for article in articles %}
-    <article class="article">
-        <header>
-            <h1>{{article.title}}</h1>
-            <div class="date">
-                <time datetime="{{article.date}}">{{article.date|date_cesky}}</time>
-                {% if article.location %}
-                <span>- {{article.location}}</span>
-                {% endif %}
-            </div>
-        </header>
-        {{article.body}}
-    </article>
-{% endfor %}
+{% extends "base.html" %}
+{% block title %}{{article.title}}{% endblock %}
+
+{% block main %}
+<article class="article">
+    <header>
+        <h1>{{article.title}}</h1>
+        <div class="date">
+            <time datetime="{{article.date}}">{{article.date|date_cesky}}</time>
+            {% if article.location %}
+            <span>- {{article.location}}</span>
+            {% endif %}
+        </div>
+    </header>
+    {{article.body}}
+</article>
+{% endblock %}
