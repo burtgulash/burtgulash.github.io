@@ -80,7 +80,9 @@ ale prozatím platí, že je to v téhle kategorii ten nejsilnější nástroj p
 nejsvalnatější a nejchlupatější chlapy.
 
 
-## Odkazy
+<br />
+<br />
+
 1. [This Just In: AdBlock Plus Still Uses a Lot of Memory](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872)
 2. [uBlock Is a Fast and Lightweight Alternative to Adblock Plus](http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461)
 3. [Google, Microsoft, and Amazon are paying to get around Adblock Plus](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock)
