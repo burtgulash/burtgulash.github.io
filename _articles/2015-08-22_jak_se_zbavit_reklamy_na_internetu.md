@@ -79,3 +79,9 @@ osud jako Adblock Plus a nenahradí ho nová generace nezkorumpovaných blokova�
 ale prozatím platí, že je to v téhle kategorii ten nejsilnější nástroj pro ty
 nejsvalnatější a nejchlupatější chlapy.
 
+
+## Odkazy
+1. [This Just In: AdBlock Plus Still Uses a Lot of Memory](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872)
+2. [uBlock Is a Fast and Lightweight Alternative to Adblock Plus](http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461)
+3. [Google, Microsoft, and Amazon are paying to get around Adblock Plus](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock)
+5. [OFICIÁLNÍ NÁVOD - Dynamic filtering: quick guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)
