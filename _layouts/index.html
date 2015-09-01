@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Buřtgulášův chlév{% endblock %}
+
+{% block main %}
+{% for article in articles %}
+    <ol>
+        <li><a href="articles/{{article.name}}.html">{{article.title}}</a></li>
+    </ol>
+{% endfor %}
+{% endblock %}
