@@ -78,7 +78,7 @@ if __name__ == "__main__":
     articles = []
     articles_path = "_articles"
     for article in os.listdir(articles_path):
-        if article.endswith(".md"):
+        if article.endswith(".md") and not article.startswith("_"):
             name = article.rstrip(".md")
             article = parse_article(name, os.path.join(articles_path, article))
             articles.append(article)
