@@ -4,7 +4,13 @@
 {% block main %}
 {% for article in articles %}
     <ol>
-        <li><a href="a/{{article.name}}.html">{{article.title}}</a></li>
+        <li>
+            <a class="article-link" href="a/{{article.name}}.html">{{article.title}}</a>
+            <span class="article-date">{{article.date|date_cesky}}</span> 
+            <div class="article-description">
+                Mini návod na blocker µBlock Origin.
+            </div>
+        </li>
     </ol>
 {% endfor %}
 {% endblock %}
