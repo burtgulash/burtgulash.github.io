@@ -41,7 +41,7 @@ spravuje komunita.
 </figure>
 
 
-## 2. Odfiltrování dodatečných reklam z českých stránek
+## 2. Odfiltrování reklam z českých stránek
 uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
 vlastní filtraci bordelu, který nebyl doteď řádně podchycen. Zapneme pokročilý
 mód, který nám umožní nastavování vlastních dynamických pravidel. 

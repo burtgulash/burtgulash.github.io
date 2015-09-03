@@ -1,7 +1,7 @@
 $text-color: #333;
 $link-color: #00307F;
 $link-color-visited: $link-color;
-$footer-size: 100px;
+$footer-size: 250px;
 
 html, body {
     height: 100%;
@@ -95,7 +95,7 @@ a:visited {
 
 figure {
     text-align: center;
-    margin: 2.2em 0;
+    margin: 2.5em 0;
 
     figcaption {
         padding: 4px;
@@ -122,7 +122,7 @@ video {
 
 footer.site-footer {
     font-size: 1.125em;
-    padding: 2.2em;
+    padding: 0;
 }
 
 hr {

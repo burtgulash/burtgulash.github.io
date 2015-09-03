@@ -67,7 +67,7 @@ a:visited {
 
 figure {
   text-align: center;
-  margin: 2.2em 0; }
+  margin: 2.5em 0; }
   figure figcaption {
     padding: 4px; }
 
@@ -76,18 +76,18 @@ video {
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -100px; }
+  margin-bottom: -250px; }
 
 .page-wrap:after {
   content: "";
   display: block; }
 
 .site-footer, .page-wrap:after {
-  height: 100px; }
+  height: 250px; }
 
 footer.site-footer {
   font-size: 1.125em;
-  padding: 2.2em; }
+  padding: 0; }
 
 hr {
   margin: 1.375em 0 1.375em 0;
