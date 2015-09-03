@@ -12,13 +12,13 @@ většiny otravných reklam na webu.
 
 Dlouhodobým pomocníkem při jarním úklidu webu byl známý Adblock Plus, ale
 poslední dobou začal žrát příliš
-paměti[<sup>1</sup>](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872)[[2]](http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461)
+paměti<sup>[1](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872),[2](http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461)</sup>
 a autor si začal nechal platit za odblokování vybraných
-reklam[[3]](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock).
+reklam[<sup>3</sup>](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock).
 Nikdo nemáme rádi korupci, proto na oba problémy přišla odpověď ve formě
 moderního blokovoče - µBlock Origin. Autoři zdůrazňují, že to není jen pouhý
 blokovač reklam, ale všeúčelový
-blokovač[[4]](https://github.com/gorhill/uBlock) - reklamy, sledování identity
+blokovač[<sup>4</sup>](https://github.com/gorhill/uBlock) - reklamy, sledování identity
 na webu, apod.
 
 
@@ -65,7 +65,7 @@ nás sledovaly na této stránce. uBlock umožňuje blokovat tyhle případy pou
 lokálně pro aktuální stránku. První sloupec zablokuje domény **všude**.
 Sloupec vpravo od něj zablokuje doménu jen na aktuální stránce. Pokud se chcete
 pošťourat v nastavení více detailu, pak existuje oficiální podrobnější
-[návod](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
+[návod<sup>4</sup>](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
 
 <figure>
     <video autoplay loop>
@@ -92,5 +92,5 @@ chlapy.
 1. [This Just In: AdBlock Plus Still Uses a Lot of Memory](http://lifehacker.com/adblock-plus-once-again-found-to-dramatically-increase-1576341872)
 2. [uBlock Is a Fast and Lightweight Alternative to Adblock Plus](http://lifehacker.com/ublock-is-a-fast-and-lightweight-alternative-to-adblock-1625246461)
 3. [Google, Microsoft, and Amazon are paying to get around Adblock Plus](http://www.theverge.com/2015/2/2/7963577/google-ads-get-through-adblock)
-5. [OFICIÁLNÍ NÁVOD - Dynamic filtering: quick guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)
+4. [OFICIÁLNÍ NÁVOD - Dynamic filtering: quick guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)
 

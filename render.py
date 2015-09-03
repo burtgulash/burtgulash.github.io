@@ -52,6 +52,13 @@ def parse_article(articlename, articlefile):
     body = "\n".join(lines[i:])
     html = hoep.render(body, 0, 0)
 
+    articlename = articlename.split("__", 1)
+    try:
+        articlename = articlename[1]
+    except IndexError:
+        articlename = articlename[0]
+    articlename.replace("_", "-")
+
     return {
         "name": articlename,
         "title": title,
