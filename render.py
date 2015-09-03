@@ -80,7 +80,7 @@ if __name__ == "__main__":
     article_template = env.get_template("article.html")
     for article in articles:
         page = article_template.render(article=article)
-        with open(os.path.join("articles", article["name"] + ".html"), "w") as out:
+        with open(os.path.join("a", article["name"] + ".html"), "w") as out:
             out.write(page)
 
     index_template = env.get_template("index.html")
