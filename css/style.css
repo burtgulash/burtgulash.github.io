@@ -2,9 +2,8 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: 'Libre Baskerville';
+  font-family: georgia, serif;
   color: #333;
-  line-height: 1.5;
   font-size: 16px;
   text-rendering: optimizelegibility;
   margin: 0;
@@ -28,7 +27,7 @@ main {
     font-weight: bold; }
   main h1 {
     font-size: 2.375em;
-    line-height: 1.25em;
+    line-height: 1.25;
     margin: 0 0 0.625em 0; }
   main h2 {
     font-size: 1.375em;
@@ -40,9 +39,9 @@ h1, h2, h3, h4, h5 {
   font-family: 'Libre Baskerville', serif; }
 
 p {
-  line-height: 1.5;
+  line-height: 1.375;
   font-weight: 400;
-  margin: 0.625em 0 0 0; }
+  margin: 0.6875em 0 0 0; }
 
 p + p {
   text-indent: 2em;
