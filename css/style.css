@@ -2,7 +2,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: georgia, "times new roman", serif;
+  font-family: sans-serif;
   color: #333;
   font-size: 16px;
   text-rendering: optimizelegibility;
@@ -52,6 +52,7 @@ article header {
   margin-top: 1em;
   margin-bottom: 2.8125em; }
   article header .date {
+    font-family: 'times new roman', serif;
     font-size: 0.875em;
     text-transform: uppercase; }
 
