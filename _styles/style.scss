@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    font-family: georgia, serif;
+    font-family: 'PT Serif', serif;
     color: $text-color;
     font-size: 16px;
     text-rendering: optimizelegibility;
@@ -59,9 +59,9 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    line-height: 1.375;
+    line-height: 1.5;
     font-weight: 400;
-    margin: 0.6875em 0 0 0;
+    margin: 0.75em 0 0 0;
 }
 
 p + p {
@@ -75,7 +75,7 @@ article header {
     margin-bottom: 5em;
 
     .date {
-        font-family: 'times new roman', serif;
+        font-family: 'PT Serif', serif;
         font-size: 0.875em;
         text-transform: uppercase;
     }
