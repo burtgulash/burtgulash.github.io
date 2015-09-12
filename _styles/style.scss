@@ -1,8 +1,8 @@
 $text-color: #535353;
-$heading-color: #333;
+$heading-color: #444;
 $link-color: #00307F;
+$light-color: #AAA;
 $link-color-visited: $link-color;
-$footer-size: 250px;
 
 html, body {
     height: 100%;
@@ -15,18 +15,6 @@ body {
     text-rendering: optimizelegibility;
     margin: 0;
     padding: 0;
-}
-
-header.site-header {
-    margin-bottom: 50px;
-    border-bottom: 1px dashed black;
-
-    h1 {
-        padding: .4em;
-        margin: 0;
-        font-size: 24px;
-        font-weight: 400;
-    }
 }
 
 main {
@@ -55,8 +43,7 @@ main {
 }
 
 h1, h2, h3, h4, h5 {
-    letter-spacing: -1px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'PT Serif', serif;
     color: $heading-color;
 }
 
@@ -71,15 +58,23 @@ p + p {
     margin-top: 0px;
 }
 
+header.site-header {
+    padding: 0;
+    margin-top: 6em;
+}
+
 article header {
     text-align: center;
-    margin-top: 4.5em;
     margin-bottom: 5em;
 
     .date {
         font-family: 'PT Serif', serif;
-        font-size: 0.875em;
-        text-transform: uppercase;
+        // font-size: 0.875em;
+        color: $light-color;
+        margin-bottom: 0.625em;
+    }
+
+    .author {
     }
 }
 
@@ -109,23 +104,10 @@ video {
     max-width: 640px;
 }
 
-.page-wrap {
-    min-height: 100%;
-    margin-bottom: -$footer-size;
-}
-
-.page-wrap:after {
-    content: "";
-    display: block;
-}
-
-.site-footer, .page-wrap:after {
-    height: $footer-size;
-}
-
 footer.site-footer {
-    font-size: 1.125em;
+    font-size: 1.25em;
     padding: 0;
+    margin: 6em;
 }
 
 hr {
@@ -142,16 +124,13 @@ hr {
     padding: .25em;
     font-size: 1.25em;
     line-height: 1.25;
-    letter-spacing: -1px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'PT Serif', serif;
     font-weight: bold;
 }
 
 .article-description {
-    padding: .5em;
-    padding-left: 3.125em;
-}
-
-.article-date {
-    padding-left: 1.5em;
+    color: $text-color;
+    * {
+        padding-left: 1em;
+    }
 }

@@ -9,27 +9,19 @@
 
         {% block head %}
         <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         {% endblock %}
     </head>
     <body>
-        <div class="page-wrap">
-            <header class="site-header">
-                <h1><a href="/">Buřtgulášův chlév</a></h1>
-            </header>
-            <main>
-                {% block main %}
-                {% endblock %}
-            </main>
-        </div>
+        <header class="site-header" />
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
         <footer class="site-footer">
             {% block footer %}
-            <br />
-            <br />
-            <br />
             <p class="author">
-                Burtgulash
+                <a href="/">burtgulash.cz</a>
             </p>
             {% endblock %}
         </footer>
