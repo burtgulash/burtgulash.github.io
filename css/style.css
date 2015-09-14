@@ -48,9 +48,9 @@ article header {
   article header .date {
     font-family: 'PT Serif', serif;
     color: #AAA;
-    line-height: 2.5; }
+    margin: 1.5em 0; }
   article header .author {
-    line-height: 2.5; }
+    margin: 1.5em 0; }
 
 a {
   text-decoration: none;
