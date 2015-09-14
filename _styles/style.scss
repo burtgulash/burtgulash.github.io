@@ -69,12 +69,12 @@ article header {
 
     .date {
         font-family: 'PT Serif', serif;
-        // font-size: 0.875em;
         color: $light-color;
-        margin-bottom: 0.625em;
+        line-height: 2.5;
     }
 
     .author {
+        line-height: 2.5;
     }
 }
 
