@@ -85,13 +85,11 @@ hr {
   text-align: center; }
 
 .article-link {
-  padding: .25em;
   font-size: 1.25em;
-  line-height: 1.25;
+  line-height: 1.5;
   font-family: 'PT Serif', serif;
   font-weight: bold; }
 
 .article-description {
-  color: #535353; }
-  .article-description * {
-    padding-left: 1em; }
+  color: #535353;
+  line-height: 1.5; }

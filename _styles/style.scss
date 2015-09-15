@@ -121,16 +121,13 @@ hr {
 }
 
 .article-link {
-    padding: .25em;
     font-size: 1.25em;
-    line-height: 1.25;
+    line-height: 1.5;
     font-family: 'PT Serif', serif;
     font-weight: bold;
 }
 
 .article-description {
     color: $text-color;
-    * {
-        padding-left: 1em;
-    }
+    line-height: 1.5;
 }
