@@ -1,1 +1,2 @@
-# [Osobní burtgulashův blog](http://burtgulash.cz)
+# Burtgulashův blog
+[http://burtgulash.cz](http://burtgulash.cz)
