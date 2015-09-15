@@ -122,7 +122,7 @@ hr {
 
 .article-link {
     font-size: 1.25em;
-    line-height: 1.5;
+    margin: 0.625em 0;
     font-family: 'PT Serif', serif;
     font-weight: bold;
 }
@@ -130,4 +130,5 @@ hr {
 .article-description {
     color: $text-color;
     line-height: 1.5;
+    margin: 0.625em 0;
 }
