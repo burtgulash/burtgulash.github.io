@@ -1,19 +1,24 @@
 {% extends "base.html" %}
 {% block title %}{{article.title}}{% endblock %}
 
+
 {% block main %}
+<header class="article-header">
+    <span class="author">
+        <a href="/">burtgulash.cz</a>
+    </span>
+    <span class="date">
+        #
+        <time datetime="{{article.date}}">{{article.date|date_cesky}}</time>
+        {% if article.location %}
+        <span># {{article.location}}</span>
+        {% endif %}
+    </span>
+</header>
+
 <article class="article">
     <header>
         <h1>{{article.title}}</h1>
-        <div class="date">
-            <time datetime="{{article.date}}">{{article.date|date_cesky}}</time>
-            {% if article.location %}
-            <span>- {{article.location}}</span>
-            {% endif %}
-        </div>
-        <div class="author">
-            <a href="/">burtgulash.cz</a>
-        </div>
     </header>
     {{article.body}}
 </article>

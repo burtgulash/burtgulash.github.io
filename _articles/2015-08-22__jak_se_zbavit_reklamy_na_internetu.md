@@ -22,7 +22,7 @@ blokovač[<sup>4</sup>](https://github.com/gorhill/uBlock) - reklamy, sledován�
 na webu, apod.
 
 
-## 1. Nainstalování
+## Nainstalování
 Stáhněte si doplněk do prohlížeče.
 
 * Chrome - [uBlock Origin - Chrome Web Store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=cs)
@@ -41,7 +41,7 @@ spravuje komunita.
 </figure>
 
 
-## 2. Odfiltrování reklam z českých stránek
+## Odfiltrování reklam z českých stránek
 uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
 vlastní filtraci bordelu, který nebyl doteď řádně podchycen. Zapneme pokročilý
 mód, který nám umožní nastavování vlastních dynamických pravidel. 

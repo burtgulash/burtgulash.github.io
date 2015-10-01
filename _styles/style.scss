@@ -1,5 +1,5 @@
 $text-color: #535353;
-$heading-color: #444;
+$heading-color: #222;
 $link-color: #00307F;
 $light-color: #AAA;
 $link-color-visited: $link-color;
@@ -59,23 +59,18 @@ p + p {
     margin-top: 0px;
 }
 
-header.site-header {
+.article-header {
     padding: 0;
-    margin-top: 6em;
+    margin: 20px 0;
 }
 
 article header {
     text-align: center;
-    margin-bottom: 5em;
+    margin: 4em 0 5em 0;
 
     .date {
         font-family: 'PT Serif', serif;
         color: $light-color;
-        margin: 1.5em 0;
-    }
-
-    .author {
-        margin: 1.5em 0;
     }
 }
 
