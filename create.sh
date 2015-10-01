@@ -1,10 +1,9 @@
 #!/bin/bash
 
-echo 1. render templates from markdowned articles
+echo 1. render.py
 [ -d a ] && rm -r a
 mkdir a
 ./render.py
 
-echo 2. preprocess scss styles. Copy over library css
-mkdir -p css
-sass --scss _styles/style.scss > css/style.css
+echo 2. gulp build-css
+gulp build-css
