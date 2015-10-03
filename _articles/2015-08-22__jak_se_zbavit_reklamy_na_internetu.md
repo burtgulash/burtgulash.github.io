@@ -62,7 +62,7 @@ nebo obrázky a skripty ze sítě pro doručování obsahu (content delivery net
 cdn). Tak tyhle radši neblokovat. Druhý pozor budeme dávat při blokování
 facebooku, twitteru a jiných stránek, které jinak používáme, ale nechceme, aby
 nás sledovaly na této stránce. uBlock umožňuje blokovat tyhle případy pouze
-lokálně pro aktuální stránku. První sloupec zablokuje domény **všude**.
+lokálně pro aktuální stránku. První sloupec zablokuje domény všude.
 Sloupec vpravo od něj zablokuje doménu jen na aktuální stránce. Pokud se chcete
 pošťourat v nastavení více detailu, pak existuje oficiální podrobnější
 [návod<sup>4</sup>](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).
@@ -75,7 +75,7 @@ pošťourat v nastavení více detailu, pak existuje oficiální podrobnější
 </figure>
 
 
-## 3. Uložení blokovacích pravidel
+## Uložení vlastních pravidel
 Pravidla se musí po vytvoření uložit, jinak budou při vypnutí prohlížeče
 ztracena.  V hlavním menu uBlocku zvolíme kartu **Vaše pravidla**/**My rules**
 a z pravého sloupce je zafixujeme natrvalo příkazem **Potvrdit**/**Commit**.
