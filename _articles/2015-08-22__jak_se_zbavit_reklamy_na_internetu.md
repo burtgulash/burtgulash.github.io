@@ -75,6 +75,12 @@ pošťourat v nastavení více detailu, pak existuje oficiální podrobnější
 </figure>
 
 
+## 3. Uložení blokovacích pravidel
+Pravidla se musí po vytvoření uložit, jinak budou při vypnutí prohlížeče
+ztracena.  V hlavním menu uBlocku zvolíme kartu **Vaše pravidla**/**My rules**
+a z pravého sloupce je zafixujeme natrvalo příkazem **Potvrdit**/**Commit**.
+
+## Závěr
 uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil pokročilejší funkce,
 jako například kosmetické filtrování - tj. odstranění konkrétních prvků na
 stránce pomocí nástroje pipeta, nebo kde spravovat svá vytvořená pravidla. Dá
