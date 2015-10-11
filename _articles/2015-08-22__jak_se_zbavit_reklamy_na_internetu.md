@@ -31,16 +31,7 @@ Stáhněte si doplněk do prohlížeče.
 
 Po nainstalování začne bez jakéhokoliv dalšího nastavování blokovat většinu
 reklamy a špíny pocházející ze zahraničních serverů - např. youtube je od teď
-povětšinou bez reklam. Toho je dosaženo pomocí statických filtrů, které
-spravuje komunita.
-
-<figure>
-    <video autoplay loop>
-        <source src="/static/ublock1.mp4" />
-    </video>
-    <figcaption>Video 1. Nainstalování doplňku</figcaption>
-</figure>
-
+povětšinou bez reklam.
 
 ## Odfiltrování reklam z českých stránek
 uBlock umožňuje vytvářet vlastní blokovací pravidla, čehož využijeme pro
@@ -49,9 +40,9 @@ mód, který nám umožní nastavování vlastních dynamických pravidel.
 
 <figure>
     <video autoplay loop>
-        <source src="/static/ublock2.mp4" />
+        <source src="/static/ublock/ublock2.mp4" />
     </video>
-    <figcaption>Video 2. Povolení pokročilého módu</figcaption>
+    <figcaption>Video 1. Povolení pokročilého módu</figcaption>
 </figure>
 
 
@@ -70,9 +61,9 @@ pošťourat v nastavení více detailu, pak existuje oficiální podrobnější
 
 <figure>
     <video autoplay loop>
-        <source src="/static/ublock3.mp4" />
+        <source src="/static/ublock/ublock3.mp4" />
     </video>
-    <figcaption>Video 3. Dynamické blokování domén</figcaption>
+    <figcaption>Video 2. Dynamické blokování domén</figcaption>
 </figure>
 
 
@@ -80,6 +71,11 @@ pošťourat v nastavení více detailu, pak existuje oficiální podrobnější
 Pravidla se musí po vytvoření uložit, jinak budou při vypnutí prohlížeče
 ztracena.  V hlavním menu uBlocku zvolíme kartu **Vaše pravidla**/**My rules**
 a z pravého sloupce je zafixujeme natrvalo příkazem **Potvrdit**/**Commit**.
+
+<figure>
+    <img src="/static/ublock/commit.png" />
+    <figcaption>Obrázek 1. Commitnutí pravidel</figcaption>
+</figure>
 
 ## Závěr
 uBlock je příjemná věc tvořená lidmi pro lidi. Nezmínil pokročilejší funkce,

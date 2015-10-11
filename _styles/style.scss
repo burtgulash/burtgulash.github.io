@@ -96,14 +96,15 @@ figure {
     text-align: center;
     margin: 2.5em 0;
 
+    video, img {
+        max-width: 640px;
+    }
+
     figcaption {
         padding: 4px;
     }
 }
 
-video {
-    max-width: 640px;
-}
 
 footer.site-footer {
     font-size: 1.25em;
@@ -125,12 +126,12 @@ hr {
     font-size: 1.25em;
     margin: 0.625em 0;
     font-family: 'PT Serif', serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .article-description {
     color: $text-color;
-    line-height: 1.5;
+    line-height: 1.25;
     div {
         display: inline-block;
         min-width: 9em;
