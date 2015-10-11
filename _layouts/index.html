@@ -6,17 +6,18 @@
     <h1>Buřtgulášův chlév</h1>
 </header>
 
+<ol class="articles">
 {% for article in articles %}
-    <ol class="articles">
-        <li>
-            <a class="article-link" href="a/{{article.name}}.html">{{article.title}}</a>
-            <div class="article-description">
-                <div class="article-date">{{article.date|date_cesky}}</div> 
-                <div>{{article.description}}</div>
-            </div>
-        </li>
-    </ol>
+    <li>
+        <a class="article-link" href="a/{{article.name}}.html">{{article.title}}</a>
+        <div class="article-description">
+            <div class="article-date">{{article.date|date_cesky}}</div> 
+            <div>{{article.description}}</div>
+        </div>
+    </li>
 {% endfor %}
+</ol>
+
 {% endblock %}
 
 {% block footer %}

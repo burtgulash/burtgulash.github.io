@@ -138,5 +138,28 @@ hr {
 }
 
 ol.articles li {
-    margin-bottom: 0.625em;
+    margin-bottom: 1.25em;
 }
+
+.pic-figure {
+    max-width: 720px;
+}
+
+.fig-wrap {
+    margin-top: 4em;
+    text-align: center;
+    div:not(.clear) {
+        vertical-align: middle;
+        float:left;
+        width: 50%;
+        margin: 0px;
+        padding: 0px;
+        img {
+            width: 87%;
+        }
+    }
+    div.clear {
+        clear: left;
+    }
+}
+
