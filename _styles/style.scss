@@ -4,10 +4,6 @@ $link-color: #00307F;
 $light-color: #AAA;
 $link-color-visited: $link-color;
 
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: 'PT Serif', serif;
     color: $text-color;
@@ -135,5 +131,12 @@ hr {
 .article-description {
     color: $text-color;
     line-height: 1.5;
-    margin: 0.625em 0;
+    div {
+        display: inline-block;
+        min-width: 9em;
+    }
+}
+
+ol.articles li {
+    margin-bottom: 0.625em;
 }
