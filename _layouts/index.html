@@ -2,12 +2,16 @@
 {% block title %}Buřtgulášův chlév{% endblock %}
 
 {% block main %}
+<header class="site-header">
+    <h1>Buřtgulášův chlév</h1>
+</header>
+
 {% for article in articles %}
     <ol>
         <li>
             <a class="article-link" href="a/{{article.name}}.html">{{article.title}}</a>
             <div class="article-description">
-                <div>Mini návod na blocker µBlock Origin.</div>
+                <div>{{article.description}}</div>
                 <div class="article-date">{{article.date|date_cesky}}</div> 
             </div>
         </li>

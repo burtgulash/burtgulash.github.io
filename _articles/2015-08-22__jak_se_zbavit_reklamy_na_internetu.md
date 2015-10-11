@@ -1,5 +1,6 @@
 ---
 title: Jak odstranit otravnou reklamu na internetu
+description: Mini návod na µBlock Origin
 date: 2015-08-22
 location: Plzeň
 ---

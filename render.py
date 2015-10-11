@@ -22,14 +22,16 @@ def parse_article(articlename, articlefile):
     in_meta = False
     lines = article.splitlines()
 
-    title, date, location = None, None, None
+    title, date, location, description = None, None, None, None
     for i, line in enumerate(lines):
         if line == "---":
             if in_meta:
                 break
             in_meta = True
         elif in_meta:
-            if line.startswith("title:"):
+            if line.startswith("description:"):
+                description = line.replace("description:", "").strip()
+            elif line.startswith("title:"):
                 title = line.replace("title:", "").strip()
             elif line.startswith("location:"):
                 location = line.replace("location:", "").strip()
@@ -65,6 +67,7 @@ def parse_article(articlename, articlefile):
         "date": date,
         "body": html,
         "location": location,
+        "description": description,
     }
 
 
