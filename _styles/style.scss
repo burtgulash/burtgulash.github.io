@@ -138,8 +138,12 @@ hr {
     }
 }
 
-ol.articles li {
-    margin-bottom: 1.25em;
+ul.articles {
+    list-style-type: none;
+    padding: 0;
+    li {
+        margin-bottom: 1.5em;
+    }
 }
 
 .pic-figure {
