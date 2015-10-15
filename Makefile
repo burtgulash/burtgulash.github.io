@@ -1,12 +1,12 @@
 build-dir = a
 
-.PHONY: all render build-css clean
+.PHONY: all render css clean
 
-all: render build-css
+all: render css
 render: $(build-dir)
 	./render.py
-build-css: $(build-dir)
-	gulp build-css
+css: $(build-dir)
+	sassc _styles/*.scss > css/style.css
 $(build-dir):
 	mkdir $(build-dir)
 clean:
