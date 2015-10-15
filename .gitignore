@@ -1,4 +1,1 @@
-\.swp$
-\.pyc$
-.sass-cache
-node_modules
+*.swp
