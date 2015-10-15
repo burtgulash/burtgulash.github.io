@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   text-rendering: optimizelegibility;
   margin: 0;
-  padding: 0; }
+  padding: 0 10px; }
 
 h1 {
   font-size: 2.375em;
@@ -102,7 +102,7 @@ ul.articles {
   list-style-type: none;
   padding: 0; }
   ul.articles li {
-    margin-bottom: 1.5em; }
+    margin: 2em 0; }
 
 .pic-figure {
   max-width: 720px; }
