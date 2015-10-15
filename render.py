@@ -93,6 +93,8 @@ if __name__ == "__main__":
         with open(os.path.join("a", article["name"] + ".html"), "w") as out:
             out.write(page)
 
+    articles.sort(key=lambda x: x["date"], reverse=True)
+
     index_template = env.get_template("index.html")
     page = index_template.render(articles=articles)
     with open("index.html", "w") as out:
